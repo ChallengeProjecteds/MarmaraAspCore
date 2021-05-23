@@ -1,3 +1,0 @@
-razorview engine sayfayı derliyor cshtml çalıştırıyor.
-
-@page razorpage demek
