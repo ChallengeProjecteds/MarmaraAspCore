@@ -1,0 +1,134 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 20px;
+    padding: 154px 0 0 0;
+    margin: 0%;
+    width: 100%;
+}
+
+.navbarSpace{
+    position: relative;
+    width: 100%;
+    transform: translate(0, -150px);
+}
+
+.bg-primary a{
+    color: ivory;
+}
+
+.bg-primary a:hover{
+    color: black;
+}
+
+.baslik
+{
+    color: #3e6ce2;
+    position: relative;
+    font-size: 200% ;
+    text-align: center;
+    margin: 20px ;
+    font-family:'Comfortaa', cursive;;
+}
+
+#baslik
+{
+    transition: 0.5s;
+}
+
+p{
+    margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p#clo{
+    margin: 25px 0px;
+}
+
+#DM{
+    background-color: rgb(255, 255, 255);
+    color: #3e6ce2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    border: 1px #3e6ce2 ;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    z-index:101;
+    transition:0.5s;
+}
+
+#DM:hover
+{
+    background-color: #3e6ce2;
+    color: white;
+}
+
+.dark-mode-div
+{
+    position: absolute;
+    top: 27%;
+    left: 90%;
+    width: 5%;
+}
+
+.CopyRight
+{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+}
+
+#nav-button
+{
+    margin: 0 50px;
+    background-color: #3e6ce2 ;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 100px;
+    font-weight: bolder;
+    transition: 0.4s;
+    z-index:101;
+    
+
+}
+
+#nav-button:hover
+{
+    color:#3e6ce2 ;
+    background-color: white;
+    
+}
+
+.side-bar-button-div
+{
+    margin: 0px 5px;
+}
+
+.about-text
+{
+    font-size: 18px;
+    text-align: center;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.card-text{
+    text-align: center;
+}
+
+
+#topluluk-card-text{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: large;
+}
