@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MarmaraWeb.Data;
+using MarmaraWeb.Services;
 
 namespace MarmaraWeb
 {
@@ -26,6 +27,8 @@ namespace MarmaraWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddTransient<JsonWikiService>();
+
             services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_CONNECTIONSTRING"]);
 
             services.AddDbContext<MarmaraWebContext>(options =>
