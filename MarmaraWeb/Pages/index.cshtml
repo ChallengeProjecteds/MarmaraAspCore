@@ -10,8 +10,8 @@
 <head>
     <!--Gerekli Bağlantılar ve CSS ile JS bağlanması. -->
     <title>Web Project</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="~/js/site.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
@@ -88,6 +88,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#iletisim">İletişim</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-page="/odevler">Ödevler</a>
             </li>
         </ul>
     </header>
@@ -326,37 +329,37 @@
                 <div class="card-columns m-5">
                     <div class="card m-2 p-5">
                         <a href="etkinlikler.html">
-                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <img class="card-img-top" src="~/Images/bird_logo.png" alt="Card image">
                             <p class="card-text" id="topluluk-card-text">Gastronomi</p>
                         </a>
                     </div>
                     <div class="card m-2 p-5">
                         <a href="etkinlikler.html">
-                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <img class="card-img-top" src="~/Images/bird_logo.png" alt="Card image">
                             <p class="card-text" id="topluluk-card-text">Spor</p>
                         </a>
                     </div>
                     <div class="card m-2 p-5">
                         <a href="etkinlikler.html">
-                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <img class="card-img-top" src="~/Images/bird_logo.png" alt="Card image">
                             <p class="card-text" id="topluluk-card-text">Eğitim</p>
                         </a>
                     </div>
                     <div class="card m-2 p-5">
                         <a href="etkinlikler.html">
-                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <img class="card-img-top" src="~/Images/bird_logo.png" alt="Card image">
                             <p class="card-text" id="topluluk-card-text">Kişisel Gelişim</p>
                         </a>
                     </div>
                     <div class="card m-2 p-5">
                         <a href="etkinlikler.html">
-                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <img class="card-img-top" src="~/Images/bird_logo.png" alt="Card image">
                             <p class="card-text" id="topluluk-card-text">Bilişim</p>
                         </a>
                     </div>
                     <div class="card m-2 p-5">
                         <a href="etkinlikler.html">
-                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <img class="card-img-top" src="~/Images/bird_logo.png" alt="Card image">
                             <p class="card-text" id="topluluk-card-text">Fotoğrafçılık</p>
                         </a>
                     </div>
@@ -374,11 +377,12 @@
                 <div>
                     <div class="col-md-3" style="float:left">
                         <div class="card mb-2">
-                            <a href="topluluk.cshtml">
-                                <img class="card-img-top" src="owl_logo.png" alt="Card image cap">
+                            @*<a asp-area="" asp-page="/Privacy">Privacy</a>*@
+                            <a asp-area="" asp-page="/topluluk">
+                                <img class="card-img-top" src="~/Images/owl_logo.png" alt="Card image cap">
                             </a>
                             <div class="card-body">
-                                <a href="topluluk.cshtml">
+                                <a asp-area="" asp-page="/topluluk">
                                     <h4 style="text-align: center;" class="card-title">Topluluk 1</h4>
                                 </a>
                                 <p class="card-text">Topluluğun kısa bir açıklaması.</p>
@@ -388,11 +392,11 @@
 
                     <div class="col-md-3" style="float:left">
                         <div class="card mb-2">
-                            <a href="topluluk.cshtml">
-                                <img class="card-img-top" src="owl_logo.png" alt="Card image cap">
+                            <a asp-area="" asp-page="/topluluk">
+                                <img class="card-img-top" src="~/Images/owl_logo.png" alt="Card image cap">
                             </a>
                             <div class="card-body">
-                                <a href="topluluk.cshtml">
+                                <a asp-area="" asp-page="/topluluk">
                                     <h4 style="text-align: center;" class="card-title">Topluluk 2</h4>
                                 </a>
                                 <p class="card-text">Topluluğun kısa bir açıklaması.</p>
@@ -402,11 +406,11 @@
 
                     <div class="col-md-3" style="float:left">
                         <div class="card mb-2">
-                            <a href="topluluk.html">
-                                <img class="card-img-top" src="owl_logo.png" alt="Card image cap">
+                            <a asp-area="" asp-page="/topluluk">
+                                <img class="card-img-top" src="~/Images/owl_logo.png" alt="Card image cap">
                             </a>
                             <div class="card-body">
-                                <a href="topluluk.html">
+                                <a asp-area="" asp-page="/topluluk">
                                     <h4 style="text-align: center;" class="card-title">Topluluk 3</h4>
                                 </a>
                                 <p class="card-text">Topluluğun kısa bir açıklaması.</p>
@@ -416,11 +420,11 @@
 
                     <div class="col-md-3" style="float:left">
                         <div class="card mb-2">
-                            <a href="topluluk.html">
-                                <img class="card-img-top" src="owl_logo.png" alt="Card image cap">
+                            <a asp-area="" asp-page="/topluluk">
+                                <img class="card-img-top" src="~/Images/owl_logo.png" alt="Card image cap">
                             </a>
                             <div class="card-body">
-                                <a href="topluluk.html">
+                                <a asp-area="" asp-page="/topluluk">
                                     <h4 style="text-align: center;" class="card-title">Topluluk 4</h4>
                                 </a>
                                 <p class="card-text">Topluluğun kısa bir açıklaması.</p>
