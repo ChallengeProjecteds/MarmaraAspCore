@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "teamId": 1,
+    "projectName": "Kazame",
+    "projectDescription": "detaylar",
+    "members": [ "Ali", "Veli" ],
+    "img": "",
+    "url": ""
+  },
+  {
+    "id": 2,
+    "teamId": 2,
+    "projectName": "FunBoys",
+    "projectDescription": "detaylar2",
+    "members": [ "Ali", "Veli" ],
+    "img": "",
+    "url": ""
+  }
+]

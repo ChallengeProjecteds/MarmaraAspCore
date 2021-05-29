@@ -12,11 +12,15 @@ namespace MarmaraWeb.Pages
 {
     public class IndexModel : PageModel
     {
-
-        public JsonWikiService JsonService;
-
         private readonly ILogger<IndexModel> _logger;
+
+        public JsonWikiService JsonWikiService;
         public WikiModel wikidata;
+
+        public JsonProjectService JsonProjectService;
+        public IEnumerable<ProjectModel> Projects;
+
+
         [BindProperty(SupportsGet =true)]
         public string Name { get; set; }
 
@@ -30,10 +34,11 @@ namespace MarmaraWeb.Pages
         [BindProperty]
         public string Title { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger, JsonWikiService jsonservice)
+        public IndexModel(ILogger<IndexModel> logger, JsonWikiService jsonwikiservice, JsonProjectService jsonprojectservice)
         {
             _logger = logger;
-            JsonService = jsonservice;
+            JsonWikiService = jsonwikiservice;
+            JsonProjectService = jsonprojectservice;
         }
 
         public void OnGet()
@@ -44,12 +49,14 @@ namespace MarmaraWeb.Pages
                 Extract= "Hayat fırsatlarla dolu bir yolculuk. Sen de bu yolculuğa katıl.";
                 Title = "Merhaba";
             }
+
+            Projects = JsonProjectService.GetProjects();
         }
         public void OnPost()
         {
             Console.WriteLine(Term);
             //JsonService.GetWikiModel(Term);
-            wikidata = JsonService.GetWikiModel(Term);
+            wikidata = JsonWikiService.GetWikiModel(Term);
             Extract = ExtractData(wikidata);
             Title = ExtractTitle(wikidata);
 

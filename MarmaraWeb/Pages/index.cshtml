@@ -34,7 +34,9 @@
 </head>
 
 <body>
+
     <header class="fixed-top">
+
         <!--Nav başlangıcı-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#!">
@@ -91,14 +93,14 @@
     </header>
 
     <!--menü bitişi-->
-
+    
     <section>
         <!--Section başlığı-->
         <div class="col-lg-12 jumbotron jumbotron-fluid m-0">
             <div class="container">
                 <h1 class="display-4 text-center">@Model.Title</h1>
                 <p class="lead" style="text-align: center;">
-                     @Model.Extract
+                    @Model.Extract
                 </p>
             </div>
         </div>
@@ -108,7 +110,11 @@
 
             <!--Asıl gövde başlangıcı-->
             <div class="col-lg-12 text-center pt-4">
-                <p class="h2">
+                <p class="h2"> Projeler:
+                    @foreach (var project in Model.Projects)
+                    {
+                        <h3>@project.projectName</h3>
+                    }
                     by CLogic
                 </p>
                 <p class="font-weight-bold">
@@ -497,7 +503,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>
