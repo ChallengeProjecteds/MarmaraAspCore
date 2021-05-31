@@ -11,9 +11,6 @@ using System.Threading.Tasks;
 
 namespace MarmaraWeb.Services
 {
-    
-    
-
     public class JsonProjectService
     { 
         public JsonProjectService(IWebHostEnvironment webHostEnvironment)
@@ -33,10 +30,7 @@ namespace MarmaraWeb.Services
         public IEnumerable<ProjectModel>GetProjects() //dönüş değeri 1 tane değil de liste olacağı için IEnumerable türü kullanıldı.
         {
 
-
-
             var json = File.OpenText(JsonFileName);
-
 
             return JsonSerializer.Deserialize<ProjectModel[]>(json.ReadToEnd());
         }
