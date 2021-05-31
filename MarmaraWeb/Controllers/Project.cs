@@ -20,13 +20,13 @@ namespace MarmaraWeb.Controllers
 
 
         [HttpGet]
-        public ActionResult<WikiModel> Get()
+        public ActionResult<string> Get()
         {
             string url = "https://musicomm.azurewebsites.net/api/comments";
             string json = new WebClient().DownloadString(url);
 
             WikiModel wikimodel = JsonSerializer.Deserialize<WikiModel>(json);
-            return wikimodel;
+            return wikimodel.ToString();
             
 
         }
