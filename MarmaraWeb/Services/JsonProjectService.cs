@@ -38,7 +38,6 @@ namespace MarmaraWeb.Services
             var json = File.OpenText(JsonFileName);
 
 
-
             return JsonSerializer.Deserialize<ProjectModel[]>(json.ReadToEnd());
         }
     }

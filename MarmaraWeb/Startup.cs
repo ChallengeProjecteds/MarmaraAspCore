@@ -29,6 +29,7 @@ namespace MarmaraWeb
             services.AddRazorPages();
             services.AddTransient<JsonWikiService>();
             services.AddTransient<JsonProjectService>();
+            services.AddControllers();
 
             services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_CONNECTIONSTRING"]);
 

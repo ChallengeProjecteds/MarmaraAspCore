@@ -25,6 +25,7 @@ namespace MarmaraWeb.Pages
         public void OnGet()
         {
             Projects = JsonProjectService.GetProjects();
+
         }
     }
 }
