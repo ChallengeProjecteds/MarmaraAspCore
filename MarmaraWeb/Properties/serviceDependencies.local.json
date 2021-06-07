@@ -18,6 +18,10 @@
     "mssql1": {
       "type": "mssql.local",
       "connectionId": "MarmaraWebContext"
+    },
+    "mssql2": {
+      "type": "mssql.local",
+      "connectionId": "ConnectionStrings:SchoolContext"
     }
   }
 }
