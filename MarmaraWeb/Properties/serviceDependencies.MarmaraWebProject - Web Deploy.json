@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/clogic-server/databases/ClogicsDatabase",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:SchoolContext",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

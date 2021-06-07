@@ -33,8 +33,8 @@ namespace MarmaraWeb
 
             services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_CONNECTIONSTRING"]);
 
-            services.AddDbContext<MarmaraWebContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("MarmaraWebContext")));
+            //services.AddDbContext<MarmaraWebContext>(options =>
+            //        options.UseSqlServer(Configuration.GetConnectionString("MarmaraWebContext")));
 
             services.AddDbContext<SchoolContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SchoolContext")));
