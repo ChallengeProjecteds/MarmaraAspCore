@@ -37,6 +37,10 @@ namespace MarmaraWeb
             //services.AddDbContext<MarmaraWebContext>(options =>
             //        options.UseSqlServer(Configuration.GetConnectionString("MarmaraWebContext")));
 
+            //services.AddDbContext<SchoolContext>(options =>
+            //        options.UseSqlServer(Configuration.GetConnectionString("SchoolContext")));
+
+
             services.AddDbContext<SchoolContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SchoolContext")));
 
