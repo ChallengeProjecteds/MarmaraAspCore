@@ -27,18 +27,23 @@ namespace MarmaraWeb.Controllers
 
 
         [HttpGet]
-        public ActionResult<string> Get()
+        public IEnumerable<ProjectModel> Get(int id)
         {
-            var projects = JsonProjectService.GetProjects();
-            return projects.ToString();
-            /*
-            string url = "https://musicomm.azurewebsites.net/api/comments";
-            string json = new WebClient().DownloadString(url);
-
-            WikiModel wikimodel = JsonSerializer.Deserialize<WikiModel>(json);
-            return wikimodel.ToString();*/
-
-
+            return JsonProjectService.GetProjects();
         }
+
+        //[HttpGet]
+        //public ActionResult<string> Get()
+        //{
+        //    var projects = JsonProjectService.GetProjects();
+        //    return projects.ToString();
+        //    /*
+        //    string url = "https://musicomm.azurewebsites.net/api/comments";
+        //    string json = new WebClient().DownloadString(url);
+
+        //    WikiModel wikimodel = JsonSerializer.Deserialize<WikiModel>(json);
+        //    return wikimodel.ToString();*/
+
+        //}
     }
 }
