@@ -28,6 +28,7 @@ namespace MarmaraWeb
         {//ben geldim
             services.AddRazorPages();
             services.AddTransient<JsonWikiService>();
+            services.AddTransient<JsonDataService>();
             services.AddTransient<JsonProjectService>();
             services.AddControllers();
 

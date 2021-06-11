@@ -54,7 +54,7 @@ namespace MarmaraWeb.Pages
         }
         public void OnPost()
         {
-            Console.WriteLine(Term);
+            //Console.WriteLine(Term);
             //JsonService.GetWikiModel(Term);
             wikidata = JsonWikiService.GetWikiModel(Term);
             Extract = ExtractData(wikidata);
