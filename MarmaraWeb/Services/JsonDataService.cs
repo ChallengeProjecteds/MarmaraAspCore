@@ -27,8 +27,17 @@ namespace MarmaraWeb.Services
         public IEnumerable<TestModel> GetDataModels()
         {
             string url = "https://musicomm.azurewebsites.net/api/comments";
-            string json = new WebClient().DownloadString(url);
+            string json;
 
+            try
+            {
+                json = new WebClient().DownloadString(url);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            
             return JsonSerializer.Deserialize<TestModel[]>(json);
         }
 

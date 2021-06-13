@@ -22,11 +22,4 @@ namespace MarmaraWeb.Models
 
     }
 
-    //public class pagevalue
-
-
-
-
-
-
 }

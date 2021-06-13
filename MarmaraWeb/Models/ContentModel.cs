@@ -16,6 +16,7 @@ namespace MarmaraWeb.Models
 
         [JsonPropertyName("img")]
         public string image { get; set; }
+        [JsonPropertyName("url")]
         public string url { get; set; }
 
     }

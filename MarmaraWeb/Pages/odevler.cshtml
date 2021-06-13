@@ -40,20 +40,35 @@
         {
             <h3>@project.projectName</h3>
         }
+        <br/>
         <h2>
             Musicomm Verileri
-
         </h2>
+
         <div class="card-columns m-5">
-            @foreach (var project in Model.testModels)
+            @if (Model.testModels != null)
+            {
+                foreach (var project in Model.testModels)
+                {
+                    <div class="card m-2 p-5">
+
+                        <img class="card-img-top" src=@project.image alt="Card image">
+                        <div class="card-body">
+                            <h5 class="card-title">ID: @project.commentId</h5>
+                            <p class="card-text">@project.comment</p>
+                            <p><i class="fas fa-address-book"></i>@project.sender</p>
+                        </div>
+
+                    </div>
+                }
+            }
+            else
             {
                 <div class="card m-2 p-5">
 
-                    <img class="card-img-top" src=@project.image alt="Card image">
                     <div class="card-body">
-                        <h5 class="card-title">ID: @project.commentId</h5>
-                        <p class="card-text">@project.comment</p>
-                        <p><i class="fas fa-address-book"></i>@project.sender</p>
+                        <h5 class="card-title">Paylaşımı durdurmuşlar</h5>
+                        <p class="card-text">Yapacak bişey yok :(((</p>
                     </div>
 
                 </div>
