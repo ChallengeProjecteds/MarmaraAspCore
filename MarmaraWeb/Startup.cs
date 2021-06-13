@@ -52,7 +52,7 @@ namespace MarmaraWeb
         {
             //if (env.IsDevelopment())
             //{
-            //    app.UseDatabaseErrorPage();
+            //    app.UseDeveloperExceptionPage();
             //}
             //else
             //{
@@ -61,7 +61,7 @@ namespace MarmaraWeb
             //    app.UseHsts();
             //}
             app.UseDeveloperExceptionPage();
-            app.UseDatabaseErrorPage();
+            app.UseMigrationsEndPoint();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
