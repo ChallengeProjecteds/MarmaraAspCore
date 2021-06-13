@@ -18,7 +18,11 @@ namespace MarmaraWeb.Pages
         public WikiModel wikidata;
 
         public JsonProjectService JsonProjectService;
+        public JsonContentServices JsonContentService;
+        public IEnumerable<ContentModel> Contents;
         public IEnumerable<ProjectModel> Projects;
+
+        public List<string> kategoriler = new List<string>();
 
 
         [BindProperty(SupportsGet =true)]
@@ -34,11 +38,12 @@ namespace MarmaraWeb.Pages
         [BindProperty]
         public string Title { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger, JsonWikiService jsonwikiservice, JsonProjectService jsonprojectservice)
+        public IndexModel(ILogger<IndexModel> logger, JsonWikiService jsonwikiservice, JsonProjectService jsonprojectservice, JsonContentServices jsoncontentservice)
         {
             _logger = logger;
             JsonWikiService = jsonwikiservice;
             JsonProjectService = jsonprojectservice;
+            JsonContentService = jsoncontentservice;
         }
 
         public void OnGet()
@@ -51,6 +56,19 @@ namespace MarmaraWeb.Pages
             }
 
             Projects = JsonProjectService.GetProjects();
+            Contents = JsonContentService.GetContents();
+
+            foreach (var item in Contents)
+            {
+                if(kategoriler.Contains(item.kategori))
+                {
+
+                }
+                else
+                {
+                    kategoriler.Add(item.kategori);
+                }
+            }
         }
         public void OnPost()
         {

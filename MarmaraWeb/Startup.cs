@@ -30,6 +30,7 @@ namespace MarmaraWeb
             services.AddTransient<JsonWikiService>();
             services.AddTransient<JsonDataService>();
             services.AddTransient<JsonProjectService>();
+            services.AddTransient<JsonContentServices>();
             services.AddControllers();
 
             services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_CONNECTIONSTRING"]);
