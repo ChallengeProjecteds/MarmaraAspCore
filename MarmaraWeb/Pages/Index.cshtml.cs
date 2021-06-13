@@ -14,8 +14,7 @@ namespace MarmaraWeb.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
-        public JsonWikiService JsonWikiService;
-        public WikiModel wikidata;
+        
 
         public JsonProjectService JsonProjectService;
         public JsonContentServices JsonContentService;
@@ -30,18 +29,17 @@ namespace MarmaraWeb.Pages
 
         [BindProperty(SupportsGet = true)]
         public string Surname { get; set; }
-
-        [BindProperty]
-        public string Term { get; set; }
         [BindProperty]
         public string Extract { get; set; }
         [BindProperty]
         public string Title { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger, JsonWikiService jsonwikiservice, JsonProjectService jsonprojectservice, JsonContentServices jsoncontentservice)
+
+
+        public IndexModel(ILogger<IndexModel> logger,  JsonProjectService jsonprojectservice, JsonContentServices jsoncontentservice)
         {
             _logger = logger;
-            JsonWikiService = jsonwikiservice;
+            
             JsonProjectService = jsonprojectservice;
             JsonContentService = jsoncontentservice;
         }
@@ -74,22 +72,11 @@ namespace MarmaraWeb.Pages
         {
             //Console.WriteLine(Term);
             //JsonService.GetWikiModel(Term);
-            wikidata = JsonWikiService.GetWikiModel(Term);
-            Extract = ExtractData(wikidata);
-            Title = ExtractTitle(wikidata);
+            
 
         }
 
-        public string ExtractData(WikiModel wikidata)
-        {
-            string firstkey = wikidata.query.pages.First().Key;
-            return wikidata.query.pages[firstkey].extract;
-        }
-        public string ExtractTitle(WikiModel wikidata)
-        {
-            string firstkey = wikidata.query.pages.First().Key;
-            return wikidata.query.pages[firstkey].title;
-        }
+        
 
     }
 }

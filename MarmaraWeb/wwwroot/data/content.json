@@ -79,5 +79,14 @@
     "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
     "img": "",
     "url": ""
+  },
+  {
+    "id": 10,
+    "baslik": "Testdo",
+    "icerik": "detaylars",
+    "kategori": "Sanatt",
+    "tarih": "Cuma, Nisan 25, 2022 1:44 ÖS +03",
+    "img": "",
+    "url": ""
   }
 ]
