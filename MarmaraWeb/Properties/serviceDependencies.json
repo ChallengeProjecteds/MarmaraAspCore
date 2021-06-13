@@ -11,10 +11,6 @@
       "type": "signalr",
       "connectionId": "Azure__SignalR__ConnectionString"
     },
-    "mssql1": {
-      "type": "mssql",
-      "connectionId": "MarmaraWebContext"
-    },
     "mssql2": {
       "type": "mssql",
       "connectionId": "ConnectionStrings:SchoolContext"
