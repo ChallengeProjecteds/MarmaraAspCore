@@ -50,11 +50,13 @@ namespace MarmaraWeb.Pages
         public void OnPost()
         {
             Projects = JsonProjectService.GetProjects();
+            testModels = JsonDataService.GetDataModels();
+            songData = JsonDataService.GetDataModelSong();
+
             if (string.IsNullOrWhiteSpace(Term))
             {
 
             }
-
             else
             {
                 wikidata = JsonWikiService.GetWikiModel(Term);
