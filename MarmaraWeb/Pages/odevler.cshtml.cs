@@ -18,7 +18,7 @@ namespace MarmaraWeb.Pages
         public JsonProjectService JsonProjectService;
         public IEnumerable<ProjectModel> Projects;
         public IEnumerable<TestModel> testModels;
-
+        public IEnumerable<SongModel> songData;
 
         private readonly ILogger<odevlerModel> _logger;
         public odevlerModel(ILogger<odevlerModel> logger, JsonProjectService jsonprojectservice, JsonDataService jsondataservice)
@@ -32,6 +32,7 @@ namespace MarmaraWeb.Pages
         {
             Projects = JsonProjectService.GetProjects();
             testModels = JsonDataService.GetDataModels();
+            songData = JsonDataService.GetDataModelSong();
         }
     }
 }

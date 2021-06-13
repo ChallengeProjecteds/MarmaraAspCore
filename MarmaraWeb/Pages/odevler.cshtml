@@ -40,7 +40,7 @@
         {
             <h3>@project.projectName</h3>
         }
-        <br/>
+        <br />
         <h2>
             Musicomm Verileri
         </h2>
@@ -69,6 +69,43 @@
                     <div class="card-body">
                         <h5 class="card-title">Paylaşımı durdurmuşlar</h5>
                         <p class="card-text">Yapacak bişey yok :(((</p>
+                    </div>
+
+                </div>
+            }
+
+        </div>
+
+
+        <br />
+        <h2>
+            SongStuff Verileri
+        </h2>
+
+        <div class="card-columns m-5">
+            @if (Model.songData != null)
+            {
+                foreach (var project in Model.songData)
+                {
+                    <div class="card m-2 p-5">
+
+                        <a href="@project.url" class="btn btn-primary m-auto justify-content-center" target="_blank">İzle</a>
+                        <div class="card-body">
+                            <h5 class="card-title">ID: @project.id</h5>
+                            <p class="card-text">Genre: @project.genre</p>
+                            <p class="card-text">Duration: @project.duration</p>
+                        </div>
+
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="card m-2 p-5">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Kaynağa Ulaşılamadı</h5>
+                        <p class="card-text">Kaynak ile irtibata geçebilirsiniz.</p>
                     </div>
 
                 </div>

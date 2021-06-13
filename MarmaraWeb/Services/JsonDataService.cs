@@ -12,7 +12,7 @@ namespace MarmaraWeb.Services
     {
 
 
-        public TestModel GetDataModel()
+        public TestModel GetDataModel() //tek örnekli json çekmek için..
         {
             string url = "https://musicomm.azurewebsites.net/api/comments";
             string json = new WebClient().DownloadString(url);
@@ -39,6 +39,22 @@ namespace MarmaraWeb.Services
             }
             
             return JsonSerializer.Deserialize<TestModel[]>(json);
+        }
+        public IEnumerable<SongModel> GetDataModelSong()
+        {
+            string url = "https://songstuff.azurewebsites.net/api/Music";
+            string json;
+
+            try
+            {
+                json = new WebClient().DownloadString(url);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
+            return JsonSerializer.Deserialize<SongModel[]>(json);
         }
 
 
