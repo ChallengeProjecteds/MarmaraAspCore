@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>738ed12d-11b0-452f-8188-4edb8ce82937</UserSecretsId>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <!--<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>-->
     <ApplicationInsightsResourceId>/subscriptions/4e450159-58a9-4933-adea-9ece0c421a09/resourceGroups/CLogicsResourceGroup/providers/microsoft.insights/components/CLogicsInstance</ApplicationInsightsResourceId>
   </PropertyGroup>
 
