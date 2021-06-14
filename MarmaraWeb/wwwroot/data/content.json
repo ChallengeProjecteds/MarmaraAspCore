@@ -39,7 +39,7 @@
     "id": 5,
     "baslik": "C# Akademi: C# 7.0 ile .NET Ortamında Programlama",
     "icerik": ".NET Platformunun en çok kullanılan programlama dili olan C#, bu eğitimde her yönüyle ele alınmaktadır.",
-    "kategori": "Bilişim",
+    "kategori": "Yazılım",
     "tarih": "19 Haziran 2021 Cumartesi 9:00-12:00",
     "img": "/Images/csakademi.jpg",
     "url": "https://www.btakademi.com/egitim/csharp-akademi-csharp-70-ile-net-ortaminda-programlama-2?utm_source=meetup"
@@ -48,7 +48,7 @@
     "id": 6,
     "baslik": "Microsoft Azure Data Fundamentals",
     "icerik": "Learn the roles, tasks, and responsibilities involved in managing data in a cloud environment.",
-    "kategori": "Bilişim",
+    "kategori": "Teknoloji",
     "tarih": "14 Haziran 2021 Pazartesi, 11:00",
     "img": "/Images/azuredata.jpg",
     "url": "https://kisaurl.org/datafundamentls6"
