@@ -77,8 +77,8 @@
     "icerik": "detaylar",
     "kategori": "Sanat",
     "tarih": "Pazar, Haziran 14, 2021 4:00 ÖS +03",
-    "img": "",
-    "url": ""
+    "img": "~/Images/thedoginart.jpg",
+    "url": "https://www.eventbrite.com/e/online-talk-an-artists-best-friend-the-dog-in-art-tickets-147566251631?aff=ebdssbcitybrowse&keep_tld=1"
   },
   {
     "id": 10,
@@ -86,7 +86,7 @@
     "icerik": "detaylar",
     "kategori": "Bilim",
     "tarih": "Pazar, Haziran 14, 2021 10:00 ÖS +03",
-    "img": "",
-    "url": ""
+    "img": "~/Images/hardtobreak.jpg",
+    "url": "https://www.eventbrite.co.uk/e/hard-to-break-why-our-brains-make-habits-stick-tickets-151308266097?aff=ebdssbcitybrowse"
   }
 ]
