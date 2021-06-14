@@ -102,7 +102,7 @@
                                                 </div>
                                             </div>
                                         }
-                                        @:</div>
+                                    @:</div>
                                 }
                                 else
                                 {
@@ -122,9 +122,9 @@
                                                 </div>
                                             </div>
                                         }
-                                        @:</div>
+                                    @:</div>
                                 }
-                                @(kalan -= 6);
+                                kalan = kalan - 6;
                             }
                         }
 
@@ -164,62 +164,24 @@
                 </div>
 
                 <div>
-                    <div class="col-md-3" style="float:left">
-                        <div class="card mb-2">
-                            <a asp-area="" asp-page="/topluluk">
-                                <img class="card-img-top" src="~/Images/owl_logo.png" alt="Card image cap">
-                            </a>
-                            <div class="card-body">
+                    @foreach (var community in Model.Communities)
+                    {
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
                                 <a asp-area="" asp-page="/topluluk">
-                                    <h4 style="text-align: center;" class="card-title">Topluluk 1</h4>
+                                    <img class="card-img-top" src=@community.img alt="Card image cap" />
                                 </a>
-                                <p class="card-text">Topluluğun kısa bir açıklaması.</p>
+                                <div class="card-body">
+                                    <a asp-area="" asp-page="/topluluk">
+                                        <h4 style="text-align: center;" class="card-title">@community.baslik</h4>
+                                    </a>
+                                    <p class="card-text">@community.icerik</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-3" style="float:left">
-                        <div class="card mb-2">
-                            <a asp-area="" asp-page="/topluluk">
-                                <img class="card-img-top" src="~/Images/owl_logo.png" alt="Card image cap">
-                            </a>
-                            <div class="card-body">
-                                <a asp-area="" asp-page="/topluluk">
-                                    <h4 style="text-align: center;" class="card-title">Topluluk 2</h4>
-                                </a>
-                                <p class="card-text">Topluluğun kısa bir açıklaması.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3" style="float:left">
-                        <div class="card mb-2">
-                            <a asp-area="" asp-page="/topluluk">
-                                <img class="card-img-top" src="~/Images/owl_logo.png" alt="Card image cap">
-                            </a>
-                            <div class="card-body">
-                                <a asp-area="" asp-page="/topluluk">
-                                    <h4 style="text-align: center;" class="card-title">Topluluk 3</h4>
-                                </a>
-                                <p class="card-text">Topluluğun kısa bir açıklaması.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3" style="float:left">
-                        <div class="card mb-2">
-                            <a asp-area="" asp-page="/topluluk">
-                                <img class="card-img-top" src="~/Images/owl_logo.png" alt="Card image cap">
-                            </a>
-                            <div class="card-body">
-                                <a asp-area="" asp-page="/topluluk">
-                                    <h4 style="text-align: center;" class="card-title">Topluluk 4</h4>
-                                </a>
-                                <p class="card-text">Topluluğun kısa bir açıklaması.</p>
-                            </div>
-                        </div>
-                    </div>
+                    }
                 </div>
+
                 <!--Hakkımızda bloğu-->
                 <div id="hakkimizda" class="navbarSpace"></div>
                 <div class="col-lg-12">

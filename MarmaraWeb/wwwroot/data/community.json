@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "baslik": "Topluluk 1",
+    "icerik": "Topluluğun kısa bir açıklaması.",
+    "img": "/Images/owl_logo.png"
+  },
+  {
+    "id": 2,
+    "baslik": "Topluluk 2",
+    "icerik": "Topluluğun kısa bir açıklaması.",
+    "img": "/Images/owl_logo.png"
+  },
+  {
+    "id": 3,
+    "baslik": "Topluluk 3",
+    "icerik": "Topluluğun kısa bir açıklaması.",
+    "img": "/Images/owl_logo.png"
+  },
+  {
+    "id": 4,
+    "baslik": "Topluluk 4",
+    "icerik": "Topluluğun kısa bir açıklaması.",
+    "img": "/Images/owl_logo.png"
+  }
+]

@@ -34,5 +34,20 @@ namespace MarmaraWeb.Services
 
             return JsonSerializer.Deserialize<ContentModel[]>(json.ReadToEnd());
         }
+
+
+
+        public string JsonCommunityFileName
+        {
+            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "community.json"); }
+        }
+
+        public IEnumerable<CommunityModel> GetCommunities() //dönüş değeri 1 tane değil de liste olacağı için IEnumerable türü kullanıldı.
+        {
+
+            var json = File.OpenText(JsonCommunityFileName);
+
+            return JsonSerializer.Deserialize<CommunityModel[]>(json.ReadToEnd());
+        }
     }
 }

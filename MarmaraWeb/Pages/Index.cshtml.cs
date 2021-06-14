@@ -19,6 +19,7 @@ namespace MarmaraWeb.Pages
         public JsonProjectService JsonProjectService;
         public JsonContentServices JsonContentService;
         public IEnumerable<ContentModel> Contents;
+        public IEnumerable<CommunityModel> Communities;
         public IEnumerable<ProjectModel> Projects;
 
         public List<string> kategoriler = new List<string>();
@@ -55,6 +56,7 @@ namespace MarmaraWeb.Pages
 
             Projects = JsonProjectService.GetProjects();
             Contents = JsonContentService.GetContents();
+            Communities = JsonContentService.GetCommunities();
 
             foreach (var item in Contents)
             {
@@ -70,10 +72,7 @@ namespace MarmaraWeb.Pages
         }
         public void OnPost()
         {
-            //Console.WriteLine(Term);
-            //JsonService.GetWikiModel(Term);
             
-
         }
 
         
