@@ -14,62 +14,62 @@
     "icerik": "Learn the key skills of effective online communication",
     "kategori": "Sanat",
     "tarih": "Fri, 7:30 PM - 9:00 PM +03",
-    "img": "~/Images/virtspek.jpg",
+    "img": "/Images/virtspek.jpg",
     "url": "https://www.eventbrite.com/e/virtual-speaking-masterclass-istanbul-tickets-134797957319?aff=ebdssbdestsearch"
   },
   {
     "id": 3,
-    "baslik": "Test",
-    "icerik": "detaylar",
-    "kategori": "Sanat",
-    "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
-    "img": "",
-    "url": ""
+    "baslik": "Estetik düşünmek: Ne kadar dengeli düşünüyoruz?",
+    "icerik": "Düşünceniz bir sanat eseri olsa neye benzerdi?",
+    "kategori": "Kişisel Gelişim",
+    "tarih": "Thu, June 17, 2021 +03",
+    "img": "/Images/estetk.jpg",
+    "url": "https://www.eventbrite.com/e/estetik-dusunmek-ne-kadar-dengeli-dusunuyoruz-1230-seans-tickets-157460822559?aff=ebdssbcitybrowse"
   },
   {
     "id": 4,
-    "baslik": "Test",
-    "icerik": "detaylar",
-    "kategori": "Sanat",
+    "baslik": "Speed Reading Class - Istanbul",
+    "icerik": "Learn speed-reading techniques and how to improve comprehension. This class is ideal for students, professionals and lifelong learners.",
+    "kategori": "Kişisel Gelişim",
     "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
-    "img": "",
-    "url": ""
+    "img": "/Images/speedread.jpg",
+    "url": "https://www.eventbrite.com/e/speed-reading-class-istanbul-registration-101328536380?aff=ebdssbdestsearch"
   },
   {
     "id": 5,
-    "baslik": "Test",
-    "icerik": "detaylar",
-    "kategori": "Sanat",
-    "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
-    "img": "",
-    "url": ""
+    "baslik": "C# Akademi: C# 7.0 ile .NET Ortamında Programlama",
+    "icerik": ".NET Platformunun en çok kullanılan programlama dili olan C#, bu eğitimde her yönüyle ele alınmaktadır.",
+    "kategori": "Bilişim",
+    "tarih": "19 Haziran 2021 Cumartesi 9:00-12:00 GMT+3",
+    "img": "/Images/csakademi.jpg",
+    "url": "https://www.btakademi.com/egitim/csharp-akademi-csharp-70-ile-net-ortaminda-programlama-2?utm_source=meetup"
   },
   {
     "id": 6,
-    "baslik": "Test",
-    "icerik": "detaylar",
-    "kategori": "Sanat",
-    "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
-    "img": "",
-    "url": ""
+    "baslik": "Microsoft Azure Data Fundamentals - June",
+    "icerik": "Learn the roles, tasks, and responsibilities involved in managing data in a cloud environment.",
+    "kategori": "Bilişim",
+    "tarih": "14 Haziran 2021 Pazartesi, 11:00",
+    "img": "/Images/azuredata.jpg",
+    "url": "https://kisaurl.org/datafundamentls6"
   },
   {
     "id": 7,
-    "baslik": "Test",
-    "icerik": "detaylar",
-    "kategori": "Sanat",
-    "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
-    "img": "",
-    "url": ""
+    "baslik": "Basit Kod Nedir?",
+    "icerik": " Clean Code'un belki de en temel konusu sayılabilecek basit kod kavramını ele alınacaktır. Bir kod parçasını basit yapan etkenler örneklerle paylaşılacaktır.",
+    "kategori": "Bilişim",
+    "tarih": "24 Haziran 2021 Perşembe 19:00 20:00 GMT+3",
+    "img": "/Images/basitkod.jpg",
+    "url": "https://www.meetup.com/tr-TR/Istanbul-Java-User-Group/events/278704817/"
   },
   {
     "id": 8,
-    "baslik": "Test",
-    "icerik": "detaylar",
-    "kategori": "Sanat",
+    "baslik": "Hibrit Kubernetes ve Traefik Proxy",
+    "icerik": "Verilerinizi ve uygulamalarınızı kendi veri merkezinizde saklamaya devam ederken, bulut avantajlarından maksimum ölçekte nasıl yararlanabileceğimizi Hakkı Öğretmen (Microsoft Türkiye) ve Mert Yeter (Fineksus) ile konuşacağız.“Hibrit bulut teknolojileri nereye gidiyor, Kubernetes teknolojisinin Microsoft’un hibrit bulut stratejisindeki önemi nedir?” sorularının cevabını Kubernetes ve Traefik’in hibritteki uyumunu demo ortamları üzerinde tecrübe edeceğiz.",
+    "kategori": "Bilişim",
     "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
-    "img": "",
-    "url": ""
+    "img": "/Images/kubernetes.jpg",
+    "url": "https://www.meetup.com/tr-TR/istanbul-traefik-meetup-group/events/278569291/"
   },
   {
     "id": 9,
@@ -77,7 +77,7 @@
     "icerik": "detaylar",
     "kategori": "Sanat",
     "tarih": "Pazar, Haziran 14, 2021 4:00 ÖS +03",
-    "img": "~/Images/thedoginart.jpg",
+    "img": "/Images/thedoginart.jpg",
     "url": "https://www.eventbrite.com/e/online-talk-an-artists-best-friend-the-dog-in-art-tickets-147566251631?aff=ebdssbcitybrowse&keep_tld=1"
   },
   {
@@ -86,7 +86,7 @@
     "icerik": "detaylar",
     "kategori": "Bilim",
     "tarih": "Pazar, Haziran 14, 2021 10:00 ÖS +03",
-    "img": "~/Images/hardtobreak.jpg",
+    "img": "/Images/hardtobreak.jpg",
     "url": "https://www.eventbrite.co.uk/e/hard-to-break-why-our-brains-make-habits-stick-tickets-151308266097?aff=ebdssbcitybrowse"
   }
 ]
