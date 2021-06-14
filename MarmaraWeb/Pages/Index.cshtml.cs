@@ -23,6 +23,7 @@ namespace MarmaraWeb.Pages
         public IEnumerable<ProjectModel> Projects;
 
         public List<string> kategoriler = new List<string>();
+        //public List<string> images = new List<string>();
 
 
         [BindProperty(SupportsGet =true)]

@@ -4,16 +4,16 @@
     "baslik": "Şiir ve Yaratıcı Zihin - Ulusal Şiir Ayını Destekleyen Sanal Gala",
     "icerik": "detaylar",
     "kategori": "Sanat",
-    "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
-    "img": "",
-    "url": ""
+    "tarih": "Cuma, Nisan 30, 2021 14:30",
+    "img": "/Images/siir.jpg",
+    "url": "https://www.meetup.com/tr-TR/Albany-Area-Poetry-Chat/events/278688623"
   },
   {
     "id": 2,
     "baslik": "Virtual Speaking Masterclass Istanbul",
     "icerik": "Learn the key skills of effective online communication",
     "kategori": "Sanat",
-    "tarih": "Fri, 7:30 PM - 9:00 PM +03",
+    "tarih": "Fri, 19:30 PM - 21:00",
     "img": "/Images/virtspek.jpg",
     "url": "https://www.eventbrite.com/e/virtual-speaking-masterclass-istanbul-tickets-134797957319?aff=ebdssbdestsearch"
   },
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "baslik": "Microsoft Azure Data Fundamentals - June",
+    "baslik": "Microsoft Azure Data Fundamentals",
     "icerik": "Learn the roles, tasks, and responsibilities involved in managing data in a cloud environment.",
     "kategori": "Bilişim",
     "tarih": "14 Haziran 2021 Pazartesi, 11:00",
