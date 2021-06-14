@@ -10,12 +10,12 @@
   },
   {
     "id": 2,
-    "baslik": "Test",
-    "icerik": "detaylar",
-    "kategori": "Bilim",
-    "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
-    "img": "",
-    "url": ""
+    "baslik": "Virtual Speaking Masterclass Istanbul",
+    "icerik": "Learn the key skills of effective online communication",
+    "kategori": "Sanat",
+    "tarih": "Fri, 7:30 PM - 9:00 PM +03",
+    "img": "~/Images/virtspek.jpg",
+    "url": "https://www.eventbrite.com/e/virtual-speaking-masterclass-istanbul-tickets-134797957319?aff=ebdssbdestsearch"
   },
   {
     "id": 3,
@@ -73,20 +73,20 @@
   },
   {
     "id": 9,
-    "baslik": "Test",
+    "baslik": "Çevrimiçi Konuşma: Bir Sanatçının En İyi Arkadaşı – The Dog in Art",
     "icerik": "detaylar",
     "kategori": "Sanat",
-    "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
-    "img": "",
-    "url": ""
+    "tarih": "Pazar, Haziran 14, 2021 4:00 ÖS +03",
+    "img": "~/Images/thedoginart.jpg",
+    "url": "https://www.eventbrite.com/e/online-talk-an-artists-best-friend-the-dog-in-art-tickets-147566251631?aff=ebdssbcitybrowse&keep_tld=1"
   },
   {
     "id": 10,
-    "baslik": "Testdo",
-    "icerik": "detaylars",
-    "kategori": "Sanatt",
-    "tarih": "Cuma, Nisan 25, 2022 1:44 ÖS +03",
-    "img": "",
-    "url": ""
+    "baslik": "Kırılması Zor: Beynimiz neden alışkanlıkları kalıcı hale getiriyor?",
+    "icerik": "detaylar",
+    "kategori": "Bilim",
+    "tarih": "Pazar, Haziran 14, 2021 10:00 ÖS +03",
+    "img": "~/Images/hardtobreak.jpg",
+    "url": "https://www.eventbrite.co.uk/e/hard-to-break-why-our-brains-make-habits-stick-tickets-151308266097?aff=ebdssbcitybrowse"
   }
 ]
