@@ -10,12 +10,12 @@
   },
   {
     "id": 2,
-    "baslik": "Test",
-    "icerik": "detaylar",
-    "kategori": "Bilim",
-    "tarih": "Cuma, Nisan 30, 2021 2:30 ÖS +03",
-    "img": "",
-    "url": ""
+    "baslik": "Virtual Speaking Masterclass Istanbul",
+    "icerik": "Learn the key skills of effective online communication",
+    "kategori": "Sanat",
+    "tarih": "Fri, 7:30 PM - 9:00 PM +03",
+    "img": "~/Images/virtspek.jpg",
+    "url": "https://www.eventbrite.com/e/virtual-speaking-masterclass-istanbul-tickets-134797957319?aff=ebdssbdestsearch"
   },
   {
     "id": 3,
